@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Courier Service Website</title>
+        <link rel="stylesheet" href="courier-desing.css">
+    </head>
+
+    <body>
+        <style>  
+            body {
+                background-image: url(photos/banner.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+              }
+        </style>
+            <!--Navigation bar-->
+            <nav>
+                <ul class="topnav">
+                    <li><a href="courier-index.html">Home</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="charges.html">Charges</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <html>
+    
+    <body style="text-align: center;">
+        <h1 style="color: rgb(170, 172, 179);">
+            Calculating charges
+        </h1>
+        <div class="container">
+            <form action="/action_page.php">
+              <div>
+                <div class="col-25">
+                  <label for="postalcode">Postal Code:</label>
+                </div>
+                <div class="col-75">
+                  <input type="number" id="postalcode" name="postalcode" placeholder="Enter your postal code...">
+                </div>
+              </div>
+              <div>
+                <div class="col-25">
+                  <label for="packweight">Weight Cost</label>
+                </div>
+                <div class="col-75">
+                  <input type="number" id="packweight" name="packweight" placeholder="Enter your pack weight... ">
+                </div>
+              </div>
+              <div>
+                <div class="col-25">
+                  <label for="notes">Notes</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="notes" name="notes" placeholder="Enter any notes..." style="height:auto"></textarea>
+                </div>
+              </div>
+            </form>
+        </div>
+        <button onClick="charges()">Proceed to calculate</button>
+        <script src="charging-form.js"></script>
+
+    </body>
+</html>
